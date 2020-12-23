@@ -1,7 +1,6 @@
 # stoneCase
 REST API to handle a logistics tracking problem.
 
-
 ## Docker for MongoDB:
 It'll be necessary build and start a container to handle all data contained on this API.
 
