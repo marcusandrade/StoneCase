@@ -1,0 +1,5 @@
+ARG DB_IMAGE
+
+FROM ${DB_IMAGE}
+
+CMD ["mongod"]
