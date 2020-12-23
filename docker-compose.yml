@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   mongodb:
-    container_name: mongodb-stone-log
+    container_name: mongo-stonecase
     build: 
       context: .
       dockerfile: docker/db/Dockerfile
@@ -10,6 +10,7 @@ services:
         DB_IMAGE: mongo:latest
     ports:
       - 27017:27017
+
   db_seed:
     build:
       context: .
@@ -20,5 +21,3 @@ services:
       - mongodb
     depends_on:
       - mongodb
-    ports:
-      - 28017:27017
